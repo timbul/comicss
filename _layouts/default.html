@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{{site.name}} - {{site.description}}</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+<meta name="author" content="Heru Setiawan" />
+<meta name="description" content="{{site.description}}" />
+<link rel="stylesheet" href="/comicss/css/main.css?v=1"/>
+<link rel="stylesheet" href="/comicss/css/{{ page.css }}"/> 
+<link rel="shortcut icon" href="/comicss/images/favicon.png" type="image/x-icon" />
+<link rel="alternate" type="application/rss+xml" href="http://sarim.in/atom.xml"/>
+</head>
+<body>
+<header>
+<div id="title">
+<h1><a href="/">comi<span>css</span></a></h1>
+<h3>Pure CSS Comic</h3>
+</div>
+<h2>{{ page.title }}</h2>
+<div id="sarimin">
+<h1><a href="http://sarim.in/">sarim<span>in</span></a></h1>
+<h3>Monkey Business</h3>
+</div>
+</header>
+<article>
+<div class="sarimiticon">
+{{ content }}
+</div>
+<!-- isi -->
+<div class="shdw">
+<div class="shdwdlm">
+</div>
+</div>
+<div class="ball ji">
+</div>
+<div class="ball ro">
+</div>
+<div class="ball lu">
+</div>{% if page.previous.url %}
+<a href="{{page.previous.url}}" id="next" title="Next">
+</a>{% endif %}{% if page.next.url %}
+<a href="{{page.next.url}}" id="prev" title="Previous">
+</a>{% endif %}
+</article>
+<footer>
+<p id="copy">Copyright &copy; 2011 <a href="http://sarim.in/about/">Heru Setiawan</a></p>
+<p id="thx">Thanks for <a href="https://github.com/mojombo/jekyll">Dr. Jekyll</a> &amp; <a href="http://pages.github.com/">Mr. Github</a></p>
+</footer>
+</body>
+</html>

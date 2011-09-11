@@ -1,0 +1,20 @@
+<article>
+<div class="sarimiticon">
+{{ content }}
+</div>
+<!-- isi -->
+<div class="shdw">
+<div class="shdwdlm">
+</div>
+</div>
+<div class="ball ji">
+</div>
+<div class="ball ro">
+</div>
+<div class="ball lu">
+</div>{% if page.previous.url %}
+<a href="{{page.previous.url}}" id="next" title="Next">
+</a>{% endif %}{% if page.next.url %}
+<a href="{{page.next.url}}" id="prev" title="Previous">
+</a>{% endif %}
+</article>

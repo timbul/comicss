@@ -1,0 +1,7 @@
+name: comicss
+description: pure css comic
+markdown: rdiscount
+pygments: true
+permalink: /comicss/:year/:month/:day/:title
+paginate: 999
+

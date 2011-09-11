@@ -1,0 +1,75 @@
+.ji {
+left: -50px;
+bottom: -4px;
+}
+
+.ro {
+left: 0;
+bottom: -50px;
+}
+
+.lu {
+left: -76px;
+bottom: 78px;
+}
+
+.pat {
+right: 136px;
+top: 156px;
+border-right: 2px solid #EEE;
+background: steelBlue;
+-webkit-transform: rotate(42deg);
+-moz-transform: rotate(42deg);
+-o-transform: rotate(42deg);
+transform: rotate(42deg);
+}
+
+.ma {
+right: 288px;
+top: 141px;
+border-left: 2px solid #EEE;
+background: steelBlue;
+}
+
+.nem {
+left: 72px;
+top: 136px;
+border-left: 2px solid #EEE;
+background: steelBlue;
+}
+
+.talkst {
+font-size: 1.5em;
+position: absolute;
+top: 105px;
+left: 53px;
+padding-bottom: 13px;
+}
+
+.talknd {
+font-size: 1.5em;
+position: absolute;
+top: 52px;
+margin-left: 270px;
+margin-right: 226px;
+padding-bottom: 5px;
+}
+
+.talkrd {
+font-size: 1.25em;
+position: absolute;
+top: 82px;
+margin-right: 40px;
+margin-left: 520px;
+padding-bottom: 10px;
+}
+
+.ie {
+top: 150px;
+left: 100px;
+}
+
+.chrome {
+right: 200px;
+top: 150px;
+}

@@ -1,0 +1,63 @@
+.ji {
+left: -50px;
+top: -4px;
+}
+
+.ro {
+left: 0;
+top: -50px;
+}
+
+.lu {
+left: -76px;
+top: 78px;
+}
+
+.pat {
+right: 69px;
+top: 98px;
+border-right: 2px solid #EEE;
+background: seaGreen;
+}
+
+.ma {
+left: 330px;
+top: 97px;
+border-right: 2px solid #EEE;
+background: seaGreen;
+}
+
+.talkst {
+font-size: 3em;
+position: absolute;
+top: 40px;
+right: 170px;
+padding-bottom: 5px;
+}
+
+.talknd {
+font-size: 2em;
+position: absolute;
+top: 64px;
+right: 35px;
+padding-bottom: 5px;
+}
+
+.sarimiticon, .talkst, .talknd, .talkrd{
+background:seaGreen;
+}
+
+.flash {
+top: 150px;
+left: 100px;
+}
+
+.sarimin {
+right: 200px;
+top: 150px;
+}
+
+.html5 {
+right: 100px;
+top: 150px;
+}
