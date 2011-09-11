@@ -2,6 +2,6 @@ name: comicss
 description: pure css comic
 markdown: rdiscount
 pygments: true
-permalink: /comicss/:year/:month/:day/:title
+permalink: pretty
 paginate: 999
 
