@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Hello World!
-css: "/css/custom/index.css"
+css: "index.css"
 ---
 
 <ul id="arsip">{% for post in paginator.posts %}
 <li>
-<a href="{{post.url}}">{{ post.title }}</a>
+<a href="/comicss{{post.url}}">{{ post.title }}</a>
 </li>{% endfor %}
 </ul>
 {% include chrome.html %}
