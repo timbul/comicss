@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>comicss</title>
- <link href="http://sarim.in/atom.xml" rel="self"/>
- <link href="http://sarim.in/"/>
+ <link href="http://sarim.in/comicss/atom.xml" rel="self"/>
+ <link href="http://sarim.in/comicss/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://sarim.in/</id>
+ <id>http://sarim.in/comicss/</id>
  <author>
    <name>Heru</name>
    <email>heru.openid@gmail.com</email>
@@ -17,9 +17,9 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://sarim.in/{{ post.url }}"/>
+   <link href="http://sarim.in/comicss/{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://sarim.in/{{ post.id }}</id>
+   <id>http://sarim.in/comicss/{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
