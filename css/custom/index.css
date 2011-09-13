@@ -1,45 +1,7 @@
-.ji {
-left: -50px;
-top: -4px;
-}
-
-.ro {
-left: 0;
-top: -50px;
-}
-
-.lu {
-left: -76px;
-top: 78px;
-}
-
-.pat {
-right: 136px;
-top: 118px;
-border-right: 2px solid #EEE;
-background: steelBlue;
--webkit-transform: rotate(42deg);
--moz-transform: rotate(42deg);
--o-transform: rotate(42deg);
-transform: rotate(42deg);
-}
-
-
-.talkrd {
-font-size: 1.25em;
-position: absolute;
-top: 98px;
-margin-right: 70px;
-margin-left: 497px;
-}
-.chrome {
-right: 200px;
-top: 150px;
-}
-
-#arsip{
-position: absolute;
-left: 150px;
-top: 100px;
-list-style-type: square;
-}
+.ji { left: -50px; top: -4px; }
+.ro { left: 0; top: -50px; }
+.lu { left: -76px; top: 78px; }
+.pat { right: 136px; top: 118px; border-right: 2px solid #EEE; background: steelBlue; -webkit-transform: rotate(42deg); -moz-transform: rotate(42deg); -o-transform: rotate(42deg); transform: rotate(42deg); }
+.talkrd { font-size: 1.25em; position: absolute; top: 98px; margin-right: 70px; margin-left: 497px; }
+.chrome { right: 200px; top: 150px; }
+#arsip { position: absolute; left: 150px; top: 100px; list-style-type: square; }

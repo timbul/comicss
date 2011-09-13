@@ -1,78 +1,18 @@
-.ji, .ro, .lu{
-display:none;
-}
-.sarimiticon{background:seagreen;}
-
-.emot{
-	width: 140px;
-	height: 160px;
-	text-align:center;
-	float:left;
-	margin:15px;
-	}
-.emot p {margin:0 0 1em 0;}
-
-.kiri {left:17px; top: 30px; width: 70px; border-radius: 35px;}
-.kanan {right:17px; top: 30px;}
-.bawah {left:35px; bottom: 9px;}
-.satu { left:18px; top:18px;}
-.dua { right:18px; top:18px;}
-.bolamata {
-	top:9px;
-	left:5px;
-	}
-	
-.merem {
-height: 4px;
--webkit-border-radius: 40px 40px 0 0/16px 16px 0 0;
--moz-border-radius: 40px 40px 0 0/16px 16px 0 0;
-border-radius: 40px 40px 0 0/16px 16px 0 0;
-width: 24px;
-position: absolute;
-border: 2px solid black;
-border-bottom: 0;
-left: 22px;
-top: 28px;
-z-index: 1;
-}
-
-.merkir {
--webkit-transform: rotate(-5deg);
--moz-transform: rotate(-5deg);
--o-transform: rotate(-5deg);
-transform: rotate(-5deg);
-}
-.merkan {
--webkit-transform: rotate(5deg);
--moz-transform: rotate(5deg);
--o-transform: rotate(5deg);
-transform: rotate(5deg);
-}
-
-.kiss{
-width: 30px;
--moz-border-radius: 0 0 17px 17px/0 0 12px 12px;
--webkit-border-radius: 0 0 17px 17px/0 0 12px 12px;
-border-radius: 0 0 17px 17px/0 0 12px 12px;
-left: 19px;
-background: red;
-border-color:  red;
-}
-
-.kiss2{
-top:auto;
-bottom: 18px;
-background: red;
-width: 20px;
-height: 16px;
--moz-border-radius: 10px/8px;
--webkit-border-radius: 10px/8px;
-border-radius: 10px/8px;
-position:absolute;
-}
-
-.one{ left: 19px;}
-.two{ right: 17px;}
-
-.sariminface{
-position:relative;}
+.ji, .ro, .lu { display: none; }
+.sarimiticon { background: seagreen; }
+.emot { width: 140px; height: 160px; text-align: center; float: left; margin: 15px; }
+	.emot p { margin: 0 0 1em 0; }
+.kiri { left: 17px; top: 30px; width: 70px; border-radius: 35px; }
+.kanan { right: 17px; top: 30px; }
+.bawah { left: 35px; bottom: 9px; }
+.satu { left: 18px; top: 18px; }
+.dua { right: 18px; top: 18px; }
+.bolamata { top: 9px; left: 5px; }
+.merem { height: 4px; -webkit-border-radius: 40px 40px 0 0/16px 16px 0 0; -moz-border-radius: 40px 40px 0 0/16px 16px 0 0; border-radius: 40px 40px 0 0/16px 16px 0 0; width: 24px; position: absolute; border: 2px solid black; border-bottom: 0; left: 22px; top: 28px; z-index: 1; }
+.merkir { -webkit-transform: rotate(-5deg); -moz-transform: rotate(-5deg); -o-transform: rotate(-5deg); transform: rotate(-5deg); }
+.merkan { -webkit-transform: rotate(5deg); -moz-transform: rotate(5deg); -o-transform: rotate(5deg); transform: rotate(5deg); }
+.kiss { width: 30px; -moz-border-radius: 0 0 17px 17px/0 0 12px 12px; -webkit-border-radius: 0 0 17px 17px/0 0 12px 12px; border-radius: 0 0 17px 17px/0 0 12px 12px; left: 19px; background: red; border-color: red; }
+.kiss2 { top: auto; bottom: 18px; background: red; width: 20px; height: 16px; -moz-border-radius: 10px/8px; -webkit-border-radius: 10px/8px; border-radius: 10px/8px; position: absolute; }
+.one { left: 19px; }
+.two { right: 17px; }
+.sariminface { position: relative; }

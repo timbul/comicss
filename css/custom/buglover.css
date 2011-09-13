@@ -1,52 +1,9 @@
-.ji {
-left: -50px;
-top: -4px;
-}
-
-.ro {
-left: 0;
-top: -50px;
-}
-
-.lu {
-left: -76px;
-top: 78px;
-}
-
-.pat {
-right: 133px;
-top: 114px;
-border-right: 2px solid #EEE;
-background: steelBlue;
-}
-
-.ma {
-left: 122px;
-top: 118px;
-border-left: 2px solid #EEE;
-background: steelBlue;
-}
-.talkst {
-font-size: 2em;
-position: absolute;
-top: 82px;
-left: 66px;
-padding-bottom: 6px;
-}
-
-.talknd {
-font-size: 2em;
-position: absolute;
-top: 74px;
-right: 60px;
-padding-bottom: 11px;
-}
-.sarimin {
-right: 100px;
-top: 150px;
-}
-
-.ie {
-top: 150px;
-left: 150px;
-}
+.ji { left: -50px; top: -4px; }
+.ro { left: 0; top: -50px; }
+.lu { left: -76px; top: 78px; }
+.pat { right: 133px; top: 114px; border-right: 2px solid #EEE; background: steelBlue; }
+.ma { left: 122px; top: 118px; border-left: 2px solid #EEE; background: steelBlue; }
+.talkst { font-size: 2em; position: absolute; top: 82px; left: 66px; padding-bottom: 6px; }
+.talknd { font-size: 2em; position: absolute; top: 74px; right: 60px; padding-bottom: 11px; }
+.sarimin { right: 100px; top: 150px; }
+.ie { top: 150px; left: 150px; }

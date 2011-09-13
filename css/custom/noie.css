@@ -1,61 +1,9 @@
-.ji {
-left: -50px;
-bottom: -4px;
-}
-
-.ro {
-left: 0;
-bottom: -50px;
-}
-
-.lu {
-left: -76px;
-bottom: 78px;
-}
-
-
-.pat {
-right: 104px;
-top: 114px;
-border-right: 2px solid #EEE;
-background: steelBlue;
-}
-
-.talkst {
-font-size: 2em;
-position: absolute;
-top: 74px;
-right: 40px;
-padding-bottom: 11px;
-}
-
-
-
-.ie {
-top: 150px;
-left: 150px;
-}
-
-.chrome {
-right: 150px;
-top: 150px;
-}
-
-.iering2 {
-width: 150px;
-height: 66px;
-position: absolute;
-left: -15px;
-top: 27px;
-background: transparent;
--moz-border-radius: 75px/33px;
--webkit-border-radius: 75px/33px;
-border-radius: 75px/33px;
--webkit-transform: rotate(46deg);
--moz-transform: rotate(46deg);
--o-transform: rotate(46deg);
-transform: rotate(46deg);
--moz-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, .1), inset -5px 3px 0 #0070BA, inset -3px 6px 0 #0070BA, inset 3px 7px 0 #0070BA, inset 6px 2px 0 #0070BA;
--webkit-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, .1), inset -5px 3px 0 #0070BA, inset -3px 6px 0 #0070BA, inset 3px 7px 0 #0070BA, inset 6px 2px 0 #0070BA;
-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, .1), inset -5px 3px 0 #0070BA, inset -3px 6px 0 #0070BA, inset 3px 7px 0 #0070BA, inset 6px 2px 0 #0070BA;
-}
+.ji { left: -50px; bottom: -4px; }
+.ro { left: 0; bottom: -50px; }
+.lu { left: -76px; bottom: 78px; }
+.pat { right: 104px; top: 114px; border-right: 2px solid #EEE; background: steelBlue; }
+.talkst { font-size: 2em; position: absolute; top: 74px; right: 40px; padding-bottom: 11px; }
+.ie { top: 150px; left: 150px; }
+.chrome { right: 150px; top: 150px; }
+.iering2 { width: 150px; height: 66px; position: absolute; left: -15px; top: 27px; background: transparent; -moz-border-radius: 75px/33px; -webkit-border-radius: 75px/33px; border-radius: 75px/33px; -webkit-transform: rotate(46deg); -moz-transform: rotate(46deg); -o-transform: rotate(46deg); transform: rotate(46deg); -moz-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, .1), inset -5px 3px 0 #0070BA, inset -3px 6px 0 #0070BA, inset 3px 7px 0 #0070BA, inset 6px 2px 0 #0070BA; -webkit-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, .1), inset -5px 3px 0 #0070BA, inset -3px 6px 0 #0070BA, inset 3px 7px 0 #0070BA, inset 6px 2px 0 #0070BA; box-shadow: inset 1px 2px 4px rgba(0, 0, 0, .1), inset -5px 3px 0 #0070BA, inset -3px 6px 0 #0070BA, inset 3px 7px 0 #0070BA, inset 6px 2px 0 #0070BA; }
+ 
