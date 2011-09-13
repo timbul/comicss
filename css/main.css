@@ -8,825 +8,132 @@ article, aside, canvas, details, figure, figcaption, hgroup,
 menu, footer, header, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; }
 article, aside, canvas, figure, figure img, figcaption, hgroup,
 footer, header, nav, section, audio, video { display: block; }
-
 /* wew */
 body { background-color: #414141; color: #eee; font: 1em/1.4 Arial, sans-serif; position: relative; }
 a:link, a:visited { color: #eee; text-decoration: none; }
 a:hover { color: #fff; background-color: rgba(238, 238, 238, .2); }
 a:focus { outline: 0; }
 h1, h2, h3 { font-weight: normal; }
-h1 { font-size: 2.25em; line-height: 1.125;}
-h2 { font-size: 1.875em; line-height: 2.25; border-bottom:2px solid #888;}
-h3 { font-size: 1em; line-height: 1.125;}
-header, article, footer {width:700px; margin:20px auto; position:relative;}
-header, footer {text-align:center;}
-footer {margin-bottom:20px; margin-top:0; border-top:2px solid #888;}
-article {margin-bottom:0; overflow:hidden;}
-
-#title, #sarimin, #prev, #next {position:absolute;}
-#sarimin, #next {top:0;right:0;}
-h1 a span {color:steelblue}
-footer p { line-height: 2.25;}
-#thx {float:right;}
-#copy {float:left;}
-#prev, #next {
-border-width: 50px 50px 50px 50px;
-top: 150px;
-opacity:.1;
-}
-a#prev:hover, a#next:hover{background-color:transparent;opacity:.2;}
-#prev  {
-border-style: solid;
-border-color: transparent #eee transparent transparent;
-left: -40px;
-}
-
-#next  {
-border-style: solid;
-border-color: transparent transparent transparent #eee;
-right: -40px;
-}
-
-.sarimiticon {
-width: 680px;
-background: steelblue;
-height: 380px;
-border: 10px solid #eee;
-position:relative;
-}
-.shdw {
-position: relative;
-width: 680px;
-height: 22px;
-background: rgba(0, 0, 0, .4);
-margin: 0 auto;
-padding-top: 2px;
-}
-
-.shdwdlm {
-width: 680px;
-height: 20px;
-background: #414141;
--moz-border-radius: 680px/10px;
--webkit-border-radius: 680px/10px;
-border-radius: 680px/10px;
--webkit-box-shadow: 0px 6px 0px #414141;
--moz-box-shadow: 0px 6px 0px #414141;
-box-shadow: 0px 6px 0px #414141;
-}
-
-.ball{
-background:#414141;
-width:100px;
-height:100px;
--webkit-border-radius: 50px;
--moz-border-radius: 50px;
-border-radius: 50px;
-position:absolute;
-}
-
-
-
-
-
+h1 { font-size: 2.25em; line-height: 1.125; }
+h2 { font-size: 1.875em; line-height: 2.25; border-bottom: 2px solid #888; }
+h3 { font-size: 1em; line-height: 1.125; }
+header, article, footer { width: 700px; margin: 20px auto; position: relative; }
+header, footer { text-align: center; }
+footer { margin-bottom: 20px; margin-top: 0; border-top: 2px solid #888; }
+article { margin-bottom: 0; overflow: hidden; }
+#title, #sarimin, #prev, #next { position: absolute; }
+#sarimin, #next { top: 0; right: 0; }
+h1 a span { color: steelblue }
+footer p { line-height: 2.25; }
+#thx { float: right; }
+#copy { float: left; }
+#prev, #next { border-width: 50px 50px 50px 50px; top: 150px; opacity: .1; }
+a#prev:hover, a#next:hover { background-color: transparent; opacity: .2; }
+#prev { border-style: solid; border-color: transparent #eee transparent transparent; left: -40px; }
+#next { border-style: solid; border-color: transparent transparent transparent #eee; right: -40px; }
+.sarimiticon { width: 680px; background: steelblue; height: 380px; border: 10px solid #eee; position: relative; margin-bottom: 20px; }
+	.sarimiticon::before { content: ' '; width: 50%; height: 50px; bottom: 0; left: 0; z-index: -1; position: absolute; -webkit-box-shadow: 0 10px 10px black; -moz-box-shadow: 0 10px 10px black; box-shadow: 0 10px 10px black; -webkit-transform: rotate(-1deg); -moz-transform: rotate(-1deg); transform: rotate(-1deg); }
+	.sarimiticon::after { content: ' '; width: 50%; height: 50px; bottom: 0; right: 0; z-index: -1; position: absolute; -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); transform: rotate(1deg); -webkit-box-shadow: 0 10px 10px black; -moz-box-shadow: 0 10px 10px black; box-shadow: 0 10px 10px black; }
+.ball { background: #414141; width: 100px; height: 100px; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; position: absolute; }
 /* sarimin */
-.sarimin{
-position:absolute;
-height:175px;
-width:200px;
-}
-
-.sariminkaki {
-width: 120px;
-height: 30px;
-position: absolute;
--moz-border-radius: 60px 60px 0 0/38px 38px 0 0;
--webkit-border-radius: 60px 60px 0 0/38px 38px 0 0;
-border-radius: 60px 60px 0 0/38px 38px 0 0;
-display: block;
-border: 6px solid #6E370F;
-border-bottom: 0;
-top: 130px;
-left: 10px;
-}
-
-.sarimintangan {
-width: 120px;
-height: 30px;
-position: absolute;
--moz-border-radius: 0 0 60px 60px/0 0 38px 38px;
--webkit-border-radius: 0 0 60px 60px/0 0 38px 38px;
-border-radius: 0 0 60px 60px/0 0 38px 38px;
-border: 6px solid #6E370F;
-border-top: 0;
-}
-
-.tangankiri {
-top: 84px;
-left: -26px;
-}
-.tangankanan {
-top: 84px;
-left: 52px;
--webkit-transform: rotate(-20deg);
--moz-transform: rotate(-20deg);
--o-transform: rotate(-20deg);
-transform: rotate(-20deg);
-}
-
-.bayangan {
-position: absolute;
-width: 150px;
-height: 10px;
--moz-border-radius: 75px/5px;
--webkit-border-radius: 75px/5px;
-border-radius: 75px/5px;
-background: black;
-top: 162px;
-opacity: .2;
-}
-
-.telapak{
-position: absolute;
-width:12px;
-height:6px;
--moz-border-radius: 6px/3px;
--webkit-border-radius: 6px/3px;
-border-radius: 6px/3px;
-background:#6E370F;
-}
-
-.ataskiri {
-top: 82px;
-left: -29px;
-}
-.ataskanan {
-left: 165px;
-top: 61px;
-}
-.bawahkiri {
-top: 162px;
-left: 6px;
-}
-.bawahkanan {
-top: 162px;
-left: 133px;
-}
-
-.sariminface {
-	width: 140px;
-	height: 140px;
-	position: absolute;
-	-moz-border-radius: 70px;
-	-webkit-border-radius: 70px;
-	border-radius: 70px;
-	display: block;
-	background: chocolate;
-	-webkit-box-shadow: inset 0px -5px 30px rgba(0, 0, 0, 0.8);
-	-moz-box-shadow: inset 0px -5px 30px rgba(0, 0, 0, 0.8);
-	box-shadow: inset 0px -5px 30px rgba(0, 0, 0, 0.8);
-	}
-
-	
-.wajah {
-	width: 70px;
-	height: 70px;
-	position: absolute;
-	-moz-border-radius: 35px;
-	-webkit-border-radius: 35px;
-	border-radius: 35px;
-	background: tan;
-	}
-.kiri {
-left: 18px;
-top: 32px;
-width: 60px;
--moz-border-radius: 30px/35px;
--webkit-border-radius: 30px/35px;
-border-radius: 30px/35px;
-}
-.kanan {right:27px; top: 30px;}
-.bawah {
-left: 29px;
-bottom: 9px;
-}
-.mata {
-	z-index:1;
-	width: 18px;
-	height: 36px;
-	position: absolute;
-	-moz-border-radius: 36px/72px;
-	-webkit-border-radius: 36px/72px;
-	border-radius: 36px/72px;
-	background: white;
-	-webkit-box-shadow: inset 0px -1px 4px rgba(0, 0, 0, 0.8);
-	-moz-box-shadow: inset 0px -1px 4px rgba(0, 0, 0, 0.8);
-	box-shadow: inset 0px -1px 4px rgba(0, 0, 0, 0.8);
-	}
-.satu { left:16px; top:16px;}
-.dua { right:18px; top:18px;}
-
-.bolamata {
-width: 9px;
-height: 18px;
-position: absolute;
--moz-border-radius: 18px/36px;
--webkit-border-radius: 18px/36px;
-border-radius: 18px/36px;
-background: black;
-top: 12px;
-left: 2px;
-}
-
-.hidung{
-	width: 8px;
-	height: 8px;
-	position: absolute;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	background: chocolate;left:31px; top:20px;
-	-webkit-box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.8);
-	-moz-box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.8);
-	box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.8);
-	}
-
-.senyum {
-	width: 36px;
-	height: 10px;
-	position: absolute;
-	-moz-border-radius: 0 0 20px 20px/0 0 12px 12px; 
-	-webkit-border-radius: 0 0 20px 20px/0 0 12px 12px; 
-	border-radius: 0 0 20px 20px/0 0 12px 12px; 
-	bottom: 15px;
-	left: 15px;
-	border: 2px solid black;
-	border-top: 0;
-}
-
-.lebar {background:black;}
-.kecut {		-moz-border-radius: 20px 20px 0 0/12px 12px 0 0; 	
-	-webkit-border-radius: 20px 20px 0 0/12px 12px 0 0; 	
-	border-radius: 20px 20px 0 0/12px 12px 0 0; 	
-border-top: 2px solid black; 	border-bottom: 0;}
-
-.melet {
-	height: 6px;
-	-moz-border-radius: 0 0 30px 30px/0 0 12px 12px;
-	-webkit-border-radius: 0 0 30px 30px/0 0 12px 12px;
-	border-radius: 0 0 30px 30px/0 0 12px 12px;
-	background:tan;
-	bottom: 20px;
-	}
-
-.lidah {
-width: 16px;
-height: 18px;
-position: absolute;
-	-moz-border-radius: 0 0 32px 32px/0 0 36px 36px;
-	-webkit-border-radius: 0 0 32px 32px/0 0 36px 36px;
-	border-radius: 0 0 32px 32px/0 0 36px 36px;
-background: red;
-bottom: 8px;
-right: 17px;
--webkit-transform: rotate(-12deg);
--moz-transform: rotate(-12deg);
--o-transform: rotate(-12deg);
-transform: rotate(-12deg);
-}
-
-.melongo{
-top: auto;
-bottom: 12px;
-background: black;
-width: 20px;
-height: 20px;
-left: 26px;
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
-position:absolute;
-}
-
-.standar {
-height: 0;
--webkit-border-radius: 0;
--moz-border-radius: 0;
-border-radius: 0;
-bottom: 22px;
--webkit-transform: rotate(10deg);
--moz-transform: rotate(10deg);
--o-transform: rotate(10deg);
-transform: rotate(10deg);
-}
-
+.sarimin { position: absolute; height: 175px; width: 200px; }
+.sariminkaki { width: 120px; height: 30px; position: absolute; -moz-border-radius: 60px 60px 0 0/38px 38px 0 0; -webkit-border-radius: 60px 60px 0 0/38px 38px 0 0; border-radius: 60px 60px 0 0/38px 38px 0 0; display: block; border: 6px solid #6E370F; border-bottom: 0; top: 130px; left: 10px; }
+.sarimintangan { width: 120px; height: 30px; position: absolute; -moz-border-radius: 0 0 60px 60px/0 0 38px 38px; -webkit-border-radius: 0 0 60px 60px/0 0 38px 38px; border-radius: 0 0 60px 60px/0 0 38px 38px; border: 6px solid #6E370F; border-top: 0; }
+.tangankiri { top: 84px; left: -26px; }
+.tangankanan { top: 84px; left: 52px; -webkit-transform: rotate(-20deg); -moz-transform: rotate(-20deg); -o-transform: rotate(-20deg); transform: rotate(-20deg); }
+.bayangan { position: absolute; width: 150px; height: 10px; -moz-border-radius: 75px/5px; -webkit-border-radius: 75px/5px; border-radius: 75px/5px; background: black; top: 162px; opacity: .2; }
+.telapak { position: absolute; width: 12px; height: 6px; -moz-border-radius: 6px/3px; -webkit-border-radius: 6px/3px; border-radius: 6px/3px; background: #6E370F; }
+.ataskiri { top: 82px; left: -29px; }
+.ataskanan { left: 165px; top: 61px; }
+.bawahkiri { top: 162px; left: 6px; }
+.bawahkanan { top: 162px; left: 133px; }
+.sariminface { width: 140px; height: 140px; position: absolute; -moz-border-radius: 70px; -webkit-border-radius: 70px; border-radius: 70px; display: block; background: chocolate; -webkit-box-shadow: inset 0px -5px 30px rgba(0, 0, 0, 0.8); -moz-box-shadow: inset 0px -5px 30px rgba(0, 0, 0, 0.8); box-shadow: inset 0px -5px 30px rgba(0, 0, 0, 0.8); }
+.wajah { width: 70px; height: 70px; position: absolute; -moz-border-radius: 35px; -webkit-border-radius: 35px; border-radius: 35px; background: tan; }
+.kiri { left: 18px; top: 32px; width: 60px; -moz-border-radius: 30px/35px; -webkit-border-radius: 30px/35px; border-radius: 30px/35px; }
+.kanan { right: 27px; top: 30px; }
+.bawah { left: 29px; bottom: 9px; }
+.mata { z-index: 1; width: 18px; height: 36px; position: absolute; -moz-border-radius: 36px/72px; -webkit-border-radius: 36px/72px; border-radius: 36px/72px; background: white; -webkit-box-shadow: inset 0px -1px 4px rgba(0, 0, 0, 0.8); -moz-box-shadow: inset 0px -1px 4px rgba(0, 0, 0, 0.8); box-shadow: inset 0px -1px 4px rgba(0, 0, 0, 0.8); }
+.satu { left: 16px; top: 16px; }
+.dua { right: 18px; top: 18px; }
+.bolamata { width: 9px; height: 18px; position: absolute; -moz-border-radius: 18px/36px; -webkit-border-radius: 18px/36px; border-radius: 18px/36px; background: black; top: 12px; left: 2px; }
+.hidung { width: 8px; height: 8px; position: absolute; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; background: chocolate; left: 31px; top: 20px; -webkit-box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.8); -moz-box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.8); box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.8); }
+.senyum { width: 36px; height: 10px; position: absolute; -moz-border-radius: 0 0 20px 20px/0 0 12px 12px; -webkit-border-radius: 0 0 20px 20px/0 0 12px 12px; border-radius: 0 0 20px 20px/0 0 12px 12px; bottom: 15px; left: 15px; border: 2px solid black; border-top: 0; }
+.lebar { background: black; }
+.kecut { -moz-border-radius: 20px 20px 0 0/12px 12px 0 0; -webkit-border-radius: 20px 20px 0 0/12px 12px 0 0; border-radius: 20px 20px 0 0/12px 12px 0 0; border-top: 2px solid black; border-bottom: 0; }
+.melet { height: 6px; -moz-border-radius: 0 0 30px 30px/0 0 12px 12px; -webkit-border-radius: 0 0 30px 30px/0 0 12px 12px; border-radius: 0 0 30px 30px/0 0 12px 12px; background: tan; bottom: 20px; }
+.lidah { width: 16px; height: 18px; position: absolute; -moz-border-radius: 0 0 32px 32px/0 0 36px 36px; -webkit-border-radius: 0 0 32px 32px/0 0 36px 36px; border-radius: 0 0 32px 32px/0 0 36px 36px; background: red; bottom: 8px; right: 17px; -webkit-transform: rotate(-12deg); -moz-transform: rotate(-12deg); -o-transform: rotate(-12deg); transform: rotate(-12deg); }
+.melongo { top: auto; bottom: 12px; background: black; width: 20px; height: 20px; left: 26px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; position: absolute; }
+.standar { height: 0; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; bottom: 22px; -webkit-transform: rotate(10deg); -moz-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg); }
 /* flash */
-.flash{
-position: absolute;
-width: 100px;
-height:175px;}
-.kotak {
-width: 100px;
-height: 120px;
-position: relative;
-text-align: center;
-font-size: 4em;
-font-family: helvetica;
-line-height: 2em;
-font-weight: bold;
-}
-.badanflash{
-	background:#971231;
-	background: -webkit-gradient(linear, left top, left bottom, from(#cb293e), to(#971231));
-	background:-moz-linear-gradient(top, #cb293e, #971231) ;
-	color:#f78e49;
-	position: absolute;
-}
-
-.kaki{
-position:absolute;
-width:6px;
-height:50px;
-}
-.kiriflash{
-background:#971231;
-left:30px;top:114px;}
-.kananflash{
-background:#971231;
-left:64px;top:114px;}
-
-.telapakkotak{
-position: absolute;
-width:12px;
-height:6px;
--webkit-border-radius: 6px/3px;
--moz-border-radius: 6px/3px;
-border-radius: 6px/3px;
-}
-
-.telapakkiriflash{
-background:#971231;
-left: 27px;
-top: 162px;
-}
-.telapakkananflash{
-background:#971231;
-left: 61px;
-top: 162px;
-}
-
-.bayangankotak{
-width: 100px;
-height: 10px;
--webkit-border-radius: 50px/5px;
--moz-border-radius: 50px/5px;
-border-radius: 50px/5px;
-}
-
+.flash { position: absolute; width: 100px; height: 175px; }
+.kotak { width: 100px; height: 120px; position: relative; text-align: center; font-size: 4em; font-family: helvetica; line-height: 2em; font-weight: bold; }
+.badanflash { background: #971231; background: -webkit-gradient(linear, left top, left bottom, from(#cb293e), to(#971231)); background: -moz-linear-gradient(top, #cb293e, #971231) ; color: #f78e49; position: absolute; }
+.kaki { position: absolute; width: 6px; height: 50px; }
+.kiriflash { background: #971231; left: 30px; top: 114px; }
+.kananflash { background: #971231; left: 64px; top: 114px; }
+.telapakkotak { position: absolute; width: 12px; height: 6px; -webkit-border-radius: 6px/3px; -moz-border-radius: 6px/3px; border-radius: 6px/3px; }
+.telapakkiriflash { background: #971231; left: 27px; top: 162px; }
+.telapakkananflash { background: #971231; left: 61px; top: 162px; }
+.bayangankotak { width: 100px; height: 10px; -webkit-border-radius: 50px/5px; -moz-border-radius: 50px/5px; border-radius: 50px/5px; }
 /* sotosop */
-.sotosop{
-position: absolute;
-width: 100px;
-height:175px;}
-
-.badansoto{
-	background:#123870;
-	background: -webkit-gradient(linear, left top, left bottom, from(#2b68d1), to(#123870));
-	background:-moz-linear-gradient(top, #2b68d1, #123870) ;
-	color:#ebebeb;
-	position: absolute;
-}
-
-
-.kirisoto{
-background:#123870;
-left:30px;top:114px;}
-.kanansoto{
-background:#123870;
-left:64px;top:114px;}
-
-
-.telapakkirisoto{
-background:#123870;
-left: 27px;
-top: 162px;
-}
-.telapakkanansoto{
-background:#123870;
-left: 61px;
-top: 162px;
-}
-
+.sotosop { position: absolute; width: 100px; height: 175px; }
+.badansoto { background: #123870; background: -webkit-gradient(linear, left top, left bottom, from(#2b68d1), to(#123870)); background: -moz-linear-gradient(top, #2b68d1, #123870) ; color: #ebebeb; position: absolute; }
+.kirisoto { background: #123870; left: 30px; top: 114px; }
+.kanansoto { background: #123870; left: 64px; top: 114px; }
+.telapakkirisoto { background: #123870; left: 27px; top: 162px; }
+.telapakkanansoto { background: #123870; left: 61px; top: 162px; }
 /* html5 */
-.html5{
-width: 118px;
-height:175px;
-position: absolute;
-}
-
-.css3 {
-width: 118px;
-height: 175px;
-position: absolute;
-}
-
-
-.dasar {
-border-style: solid;
-width: 0;
-height: 0;
-position:absolute;
-}
-.sisikiri {
-border-width: 75px 31px 9px 7px;
-border-color: #EBEBEB #EBEBEB transparent transparent;
-left: 21px;
-top: 24px;
-}
-
-.sisikanan{
-border-width: 75px 7px 9px 31px;
-border-color: white transparent transparent white;
-left: 58px;
-top: 24px;
-}
-
-.limakiri {
-border-width: 118px 49px 15px 10px;
-border-color: #E34C26 #E34C26 transparent transparent;
-}
-.limakanan {
-border-width: 118px 10px 15px 49px;
-border-color: #E34C26 transparent transparent #E34C26;
-left: 59px;
-}
-
-.tigakiri {
-border-width: 118px 49px 15px 10px;
-border-color: #0070ba #0070ba transparent transparent;
-}
-.tigakanan {
-border-width: 118px 10px 15px 49px;
-border-color: #0070ba transparent transparent #0070ba;
-left: 59px;
-}
-
-.garisatas5 {
-width: 58px;
-height: 16px;
-position: absolute;
-background: #E34C26;
--webkit-transform: skew(4deg, 0);
--moz-transform: skew(4deg, 0);
--o-transform: skew(4deg, 0);
-transform: skew(4deg, 0);
-top: 38px;
-left: 38px;
-}
-
-.garisatas3 {
-width: 58px;
-height: 16px;
-position: absolute;
-background: #0070BA;
--webkit-transform: skew(-4deg, 0);
--moz-transform: skew(-4deg, 0);
--o-transform: skew(-4deg, 0);
-transform: skew(-4deg, 0);
-top: 38px;
-left: 21px;
-}
-
-.garisbawahkiri5 {
-border-width: 20px 17px 5px 2px;
-border-color: #E34C26 #E34C26 transparent transparent;
-left: 40px;
-top: 68px;
-}
-
-.garisbawahkiri3 {
-border-width: 20px 17px 5px 2px;
-border-color: #0070ba #0070ba transparent transparent;
-left: 40px;
-top: 68px;
-}
-
-.garisbawahkanan5 {
-border-width: 20px 2px 5px 17px;
-border-color: #E34C26 transparent transparent #E34C26;
-left: 59px;
-top: 68px;
-}
-
-.garisbawahkanan3 {
-border-width: 20px 2px 5px 17px;
-border-color: #0070ba transparent transparent #0070ba;
-left: 59px;
-top: 68px;
-}
-
-.garistengah5 {
-width: 39px;
-height: 7px;
-position: absolute;
-background: #E34C26;
-top: 68px;
-left: 20px;
-}
-
-.garistengah3 {
-width: 39px;
-height: 7px;
-position: absolute;
-background: #0070ba;
-top: 68px;
-left: 20px;
-}
-
-.bokehkiri5 {
-border-width: 102px 9px 11px 38px;
-border-color: orange transparent transparent orange;
-left: 58px;
-top: 9px;
-opacity: .2;
-}
-
-.bokehkiri3 {
-border-width: 102px 9px 11px 38px;
-border-color: white transparent transparent white;
-left: 58px;
-top: 9px;
-opacity: .2;
-}
-
-.kirihtml5{
-background:#e34c26;
-left:30px;top:114px;}
-.kananhtml5 {
-background: #E34C26;
-left: 82px;
-top: 114px;
-}
-
-.telapakkirihtml5{
-background:#e34c26;
-left: 27px;
-top: 162px;
-}
-.telapakkananhtml5{
-background:#e34c26;
-left: 79px;
-top: 162px;
-}
-
-.limatiga{
-width: 118px;
-height: 10px;
--moz-border-radius: 59px/5px;
--webkit-border-radius: 59px/5px;
-border-radius: 59px/5px;
-}
-
-
-.kiricss3{
-background:#0070ba;
-left:30px;top:114px;}
-.kanancss3 {
-background: #0070ba;
-left: 82px;
-top: 114px;
-}
-
-.telapakkiricss3{
-background:#0070ba;
-left: 27px;
-top: 162px;
-}
-.telapakkanancss3{
-background:#0070ba;
-left: 79px;
-top: 162px;
-}
-
+.html5 { width: 118px; height: 175px; position: absolute; }
+.css3 { width: 118px; height: 175px; position: absolute; }
+.dasar { border-style: solid; width: 0; height: 0; position: absolute; }
+.sisikiri { border-width: 75px 31px 9px 7px; border-color: #EBEBEB #EBEBEB transparent transparent; left: 21px; top: 24px; }
+.sisikanan { border-width: 75px 7px 9px 31px; border-color: white transparent transparent white; left: 58px; top: 24px; }
+.limakiri { border-width: 118px 49px 15px 10px; border-color: #E34C26 #E34C26 transparent transparent; }
+.limakanan { border-width: 118px 10px 15px 49px; border-color: #E34C26 transparent transparent #E34C26; left: 59px; }
+.tigakiri { border-width: 118px 49px 15px 10px; border-color: #0070ba #0070ba transparent transparent; }
+.tigakanan { border-width: 118px 10px 15px 49px; border-color: #0070ba transparent transparent #0070ba; left: 59px; }
+.garisatas5 { width: 58px; height: 16px; position: absolute; background: #E34C26; -webkit-transform: skew(4deg, 0); -moz-transform: skew(4deg, 0); -o-transform: skew(4deg, 0); transform: skew(4deg, 0); top: 38px; left: 38px; }
+.garisatas3 { width: 58px; height: 16px; position: absolute; background: #0070BA; -webkit-transform: skew(-4deg, 0); -moz-transform: skew(-4deg, 0); -o-transform: skew(-4deg, 0); transform: skew(-4deg, 0); top: 38px; left: 21px; }
+.garisbawahkiri5 { border-width: 20px 17px 5px 2px; border-color: #E34C26 #E34C26 transparent transparent; left: 40px; top: 68px; }
+.garisbawahkiri3 { border-width: 20px 17px 5px 2px; border-color: #0070ba #0070ba transparent transparent; left: 40px; top: 68px; }
+.garisbawahkanan5 { border-width: 20px 2px 5px 17px; border-color: #E34C26 transparent transparent #E34C26; left: 59px; top: 68px; }
+.garisbawahkanan3 { border-width: 20px 2px 5px 17px; border-color: #0070ba transparent transparent #0070ba; left: 59px; top: 68px; }
+.garistengah5 { width: 39px; height: 7px; position: absolute; background: #E34C26; top: 68px; left: 20px; }
+.garistengah3 { width: 39px; height: 7px; position: absolute; background: #0070ba; top: 68px; left: 20px; }
+.bokehkiri5 { border-width: 102px 9px 11px 38px; border-color: orange transparent transparent orange; left: 58px; top: 9px; opacity: .2; }
+.bokehkiri3 { border-width: 102px 9px 11px 38px; border-color: white transparent transparent white; left: 58px; top: 9px; opacity: .2; }
+.kirihtml5 { background: #e34c26; left: 30px; top: 114px; }
+.kananhtml5 { background: #E34C26; left: 82px; top: 114px; }
+.telapakkirihtml5 { background: #e34c26; left: 27px; top: 162px; }
+.telapakkananhtml5 { background: #e34c26; left: 79px; top: 162px; }
+.limatiga { width: 118px; height: 10px; -moz-border-radius: 59px/5px; -webkit-border-radius: 59px/5px; border-radius: 59px/5px; }
+.kiricss3 { background: #0070ba; left: 30px; top: 114px; }
+.kanancss3 { background: #0070ba; left: 82px; top: 114px; }
+.telapakkiricss3 { background: #0070ba; left: 27px; top: 162px; }
+.telapakkanancss3 { background: #0070ba; left: 79px; top: 162px; }
 /* chrome */
-.chrome{
-width: 120px;
-height:120px;
-position:absolute;
-}
-
-.kuning {
-width: 120px;
-height: 120px;
-position: absolute;
--moz-border-radius: 60px;
--webkit-border-radius: 60px;
-border-radius: 60px;
-background: #fdd901;
-}
-
-.merah {
-width: 36px;
-height: 60px;
-position: absolute;
-background: #ea3f37;
-left: 18px;
--webkit-transform: rotate(-30deg);
--moz-transform: rotate(-30deg);
--o-transform: rotate(-30deg);
-transform: rotate(-30deg);
-top: 5px;
-}
-
-.merah2 {
-width: 84px;
-height: 32px;
-position: absolute;
-background: #ea3f37;
-right: 0;
-}
-
-.ijo {
-width: 60px;
-height: 98px;
-position: absolute;
-background: #5bc15b;
-}
-
-.ijo2{
--webkit-transform: rotate(30deg);
--moz-transform: rotate(30deg);
--o-transform: rotate(30deg);
-transform: rotate(30deg);
-background: #5bc15b;
-width: 52px;
-height: 80px;
-top: 48px;
-left: 16px;
-position: absolute;
-}
-
- .chromewrap{
- width: 120px;
-height: 120px;
-position: absolute;
-background: transparent;
--moz-border-radius: 86px;
--webkit-border-radius: 86px;
-border-radius: 86px;
-border: 26px solid steelblue;
-top: -26px;
-left: -26px;
-}
-
-.chromewrap2 {
-width: 120px;
-height: 120px;
-position: absolute;
-background: transparent;
--moz-border-radius: 60px;
--webkit-border-radius: 60px;
-border-radius: 60px;
--moz-box-shadow: inset 0 -10px 36px rgba(0, 0, 0, .4);
--webkit-box-shadow: inset 0 -10px 36px rgba(0, 0, 0, .4);
-box-shadow: inset 0 -10px 36px rgba(0, 0, 0, .4);
-}
-
-.biru {
-	background:#2074b4;
-	background: -webkit-gradient(linear, left top, left bottom, from(#8dbfe2), to(#2074b4));
-	background:-moz-linear-gradient(top, #8dbfe2, #2074b4) ;
-width: 46px;
-height: 46px;
-position: absolute;
--moz-border-radius: 28px;
--webkit-border-radius: 28px;
-border-radius: 28px;
-border: 4px solid #eee;
-top: 32px;
-left: 32px;
-}
-
-.kirichrome{
-background: #428C42;
-height: 56px;
-top: 110px;
-left: 30px;
-}
-.kananchrome{
-background: #B29900;
-left: 82px;
-height: 56px;
-top: 110px;
-}
-.telapakkirichrome {
-background: #D43932;
-left: 27px;
-top: 162px;
-}
-.telapakkananchrome {
-background: #D43932;
-left: 79px;
-top: 162px;
-}
+.chrome { width: 120px; height: 120px; position: absolute; }
+.kuning { width: 120px; height: 120px; position: absolute; -moz-border-radius: 60px; -webkit-border-radius: 60px; border-radius: 60px; background: #fdd901; }
+.merah { width: 36px; height: 60px; position: absolute; background: #ea3f37; left: 18px; -webkit-transform: rotate(-30deg); -moz-transform: rotate(-30deg); -o-transform: rotate(-30deg); transform: rotate(-30deg); top: 5px; }
+.merah2 { width: 84px; height: 32px; position: absolute; background: #ea3f37; right: 0; }
+.ijo { width: 60px; height: 98px; position: absolute; background: #5bc15b; }
+.ijo2 { -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg); -o-transform: rotate(30deg); transform: rotate(30deg); background: #5bc15b; width: 52px; height: 80px; top: 48px; left: 16px; position: absolute; }
+.chromewrap { width: 120px; height: 120px; position: absolute; background: transparent; -moz-border-radius: 86px; -webkit-border-radius: 86px; border-radius: 86px; border: 26px solid steelblue; top: -26px; left: -26px; }
+.chromewrap2 { width: 120px; height: 120px; position: absolute; background: transparent; -moz-border-radius: 60px; -webkit-border-radius: 60px; border-radius: 60px; -moz-box-shadow: inset 0 -10px 36px rgba(0, 0, 0, .4); -webkit-box-shadow: inset 0 -10px 36px rgba(0, 0, 0, .4); box-shadow: inset 0 -10px 36px rgba(0, 0, 0, .4); }
+.biru { background: #2074b4; background: -webkit-gradient(linear, left top, left bottom, from(#8dbfe2), to(#2074b4)); background: -moz-linear-gradient(top, #8dbfe2, #2074b4) ; width: 46px; height: 46px; position: absolute; -moz-border-radius: 28px; -webkit-border-radius: 28px; border-radius: 28px; border: 4px solid #eee; top: 32px; left: 32px; }
+.kirichrome { background: #428C42; height: 56px; top: 110px; left: 30px; }
+.kananchrome { background: #B29900; left: 82px; height: 56px; top: 110px; }
+.telapakkirichrome { background: #D43932; left: 27px; top: 162px; }
+.telapakkananchrome { background: #D43932; left: 79px; top: 162px; }
 /* ie */
-.ie {
-width: 120px;
-height:120px;
-position:absolute;
-}
-
-.iebody {
-width: 104px;
-height: 98px;
-position: absolute;
-left: 8px;
-top: 12px;
-background: #0070ba;
--moz-border-radius: 52px/49px;
--webkit-border-radius: 52px/49px;
-border-radius: 52px/49px;
--moz-box-shadow: inset 0 10px 10px rgba(0, 0, 0, .1), inset 0 -10px 10px rgba(0, 0, 0, .1);
--webkit-box-shadow: inset 0 10px 10px rgba(0, 0, 0, .1), inset 0 -10px 10px rgba(0, 0, 0, .1);
-box-shadow: inset 0 10px 10px rgba(0, 0, 0, .1), inset 0 -10px 10px rgba(0, 0, 0, .1);
-}
-
-.ieatas {
-width: 34px;
-height: 18px;
-position: absolute;
-left: 37px;
-top: 23px;
-background: steelblue;
--moz-border-radius: 26px 26px 0 0;
--webkit-border-radius: 26px 26px 0 0;
-border-radius: 26px 26px 0 0;
-}
-
-.iebawah {
-width: 34px;
-height: 18px;
-position: absolute;
-left: 37px;
-top: 56px;
-background: steelblue;
--moz-border-radius: 0 0 26px 26px;
--webkit-border-radius: 0 0 26px 26px;
-border-radius: 0 0 26px 26px;
-}
-
-.ietengah {
-width: 38px;
-height: 8px;
-position: absolute;
-left: 68px;
-top: 56px;
-background: steelblue;
-}
-
-.iering {
-width: 150px;
-height: 66px;
-position: absolute;
-left: -15px;
-top: 27px;
-background: transparent;
--webkit-border-radius: 75px/33px;
--moz-border-radius: 75px/33px;
-border-radius: 75px/33px;
--webkit-transform: rotate(-46deg);
--moz-transform: rotate(-46deg);
--o-transform: rotate(-46deg);
-transform: rotate(-46deg);
--webkit-box-shadow:inset 1px 2px 4px rgba(0, 0, 0, .1), inset -5px 3px 0 #0070BA, inset -3px 6px 0 #0070BA, inset 3px 7px 0 #0070BA, inset 6px 2px 0 #0070BA, -32px -6px 0 steelblue;
--moz-box-shadow:inset 1px 2px 4px rgba(0, 0, 0, .1), inset -5px 3px 0 #0070BA, inset -3px 6px 0 #0070BA, inset 3px 7px 0 #0070BA, inset 6px 2px 0 #0070BA, -32px -6px 0 steelblue;
-box-shadow:inset 1px 2px 4px rgba(0, 0, 0, .1), inset -5px 3px 0 #0070BA, inset -3px 6px 0 #0070BA, inset 3px 7px 0 #0070BA, inset 6px 2px 0 #0070BA, -32px -6px 0 steelblue;
-}
-
-.kiriie {
-left: 42px;
-top: 104px;
-height: 62px;
-background: #0065A8;
-}
-
-.kananie{
-left: 76px;
-top: 104px;
-height: 62px;
-background: #0065A8;
-}
-
-.telapakkiriie {
-top: 162px;
-left: 39px;
-background: #0065A8;
-}
-
-.telapakkananie {
-left: 73px;
-background: #0065A8;
-top: 162px;
-}
-
-.talkst, .talknd, .talkrd {font-style:italic; background:steelblue;}
+.ie { width: 120px; height: 120px; position: absolute; }
+.iebody { width: 104px; height: 98px; position: absolute; left: 8px; top: 12px; background: #0070ba; -moz-border-radius: 52px/49px; -webkit-border-radius: 52px/49px; border-radius: 52px/49px; -moz-box-shadow: inset 0 10px 10px rgba(0, 0, 0, .1), inset 0 -10px 10px rgba(0, 0, 0, .1); -webkit-box-shadow: inset 0 10px 10px rgba(0, 0, 0, .1), inset 0 -10px 10px rgba(0, 0, 0, .1); box-shadow: inset 0 10px 10px rgba(0, 0, 0, .1), inset 0 -10px 10px rgba(0, 0, 0, .1); }
+.ieatas { width: 34px; height: 18px; position: absolute; left: 37px; top: 23px; background: steelblue; -moz-border-radius: 26px 26px 0 0; -webkit-border-radius: 26px 26px 0 0; border-radius: 26px 26px 0 0; }
+.iebawah { width: 34px; height: 18px; position: absolute; left: 37px; top: 56px; background: steelblue; -moz-border-radius: 0 0 26px 26px; -webkit-border-radius: 0 0 26px 26px; border-radius: 0 0 26px 26px; }
+.ietengah { width: 38px; height: 8px; position: absolute; left: 68px; top: 56px; background: steelblue; }
+.iering { width: 150px; height: 66px; position: absolute; left: -15px; top: 27px; background: transparent; -webkit-border-radius: 75px/33px; -moz-border-radius: 75px/33px; border-radius: 75px/33px; -webkit-transform: rotate(-46deg); -moz-transform: rotate(-46deg); -o-transform: rotate(-46deg); transform: rotate(-46deg); -webkit-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, .1), inset -5px 3px 0 #0070BA, inset -3px 6px 0 #0070BA, inset 3px 7px 0 #0070BA, inset 6px 2px 0 #0070BA, -32px -6px 0 steelblue; -moz-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, .1), inset -5px 3px 0 #0070BA, inset -3px 6px 0 #0070BA, inset 3px 7px 0 #0070BA, inset 6px 2px 0 #0070BA, -32px -6px 0 steelblue; box-shadow: inset 1px 2px 4px rgba(0, 0, 0, .1), inset -5px 3px 0 #0070BA, inset -3px 6px 0 #0070BA, inset 3px 7px 0 #0070BA, inset 6px 2px 0 #0070BA, -32px -6px 0 steelblue; }
+.kiriie { left: 42px; top: 104px; height: 62px; background: #0065A8; }
+.kananie { left: 76px; top: 104px; height: 62px; background: #0065A8; }
+.telapakkiriie { top: 162px; left: 39px; background: #0065A8; }
+.telapakkananie { left: 73px; background: #0065A8; top: 162px; }
+.talkst, .talknd, .talkrd { font-style: italic; background: steelblue; }
